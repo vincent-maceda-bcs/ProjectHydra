@@ -1,0 +1,64 @@
+@media (max-width: 767px) {
+    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+    .body-content {
+        padding-top: 50px;
+    }
+}
+
+/*DEVICES*/
+@smartphones-portrait: ~"screen and (max-width:360px)";
+@smartphones: ~"screen and (min-width: 361px) and (max-width:640px)";
+@phablets: ~"screen and (min-width: 641px) and (max-width:850px)";
+@tablets: ~"screen and (min-width: 851px) and (max-width:1024px)";
+@desktops: ~"screen and (min-width: 1025px) and (max-width: 1280px)";
+@retinas: ~"screen and (min-width: 1281px)";
+/* End of Devices*/
+
+html, body {
+    font-family: 'Regular';
+    min-width: 320px;
+    //height: 100%;
+    color: black;
+    background-color: white !important;
+    margin: inherit
+}
+
+a {
+    cursor: pointer;
+}
+
+    a:hover, a:focus {
+        color: black;
+        border-bottom: 2px solid orangered;
+        text-decoration: none;
+    }
+
+span {
+    color: black;
+}
+
+input:focus,
+select, select:focus,
+textarea:focus,
+button:focus,
+.btn, .btn:focus, button, button:focus {
+    outline: none !important;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+    opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+    opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
